@@ -12,7 +12,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Fonarik"),
+        title: const Text("Turn on"),
       ),
       body: Center(
         child: SwitchListTile(value: true, onChanged: (value) {}),
