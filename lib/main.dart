@@ -6,16 +6,21 @@ void main() {
 }
 
 class FlashlightApp extends StatelessWidget {
+  const FlashlightApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: FlashlightHomePage(),
     );
   }
 }
 
 class FlashlightHomePage extends StatefulWidget {
+  const FlashlightHomePage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _FlashlightHomePageState createState() => _FlashlightHomePageState();
 }
 
@@ -38,7 +43,7 @@ class _FlashlightHomePageState extends State<FlashlightHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flashlight App'),
+        title: const Text('Flashlight App'),
       ),
       body: Center(
         child: ElevatedButton(
